@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; 
+            background-color: #f3f4f6; 
+            margin: 0;
+        }
+
+    
+        .form {
+            background-color: #fff;
+            padding: 1rem;
+            max-width: 350px;
+            border-radius: 0.5rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 
+                        0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        
+        
+        .form-title {
+            font-size: 1.25rem;
+            line-height: 1.75rem;
+            font-weight: 600;
+            text-align: center;
+            color: #000;
+            margin-bottom: 1rem; 
+        }
+        
+    
+        .input-span {
+            margin-bottom: 1rem; 
+        }
+        
+        
+        .input-span label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #4B5563;
+        }
+
+        
+        .input-span input {
+            outline: none;
+            border: 1px solid #e5e7eb;
+            background-color: #fff;
+            padding: 1rem;
+            font-size: 0.875rem;
+            line-height: 1.25rem;
+            width: 100%; 
+            border-radius: 0.5rem;
+            box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            transition: border-color 0.3s, box-shadow 0.3s; 
+        }
+        
+        
+        .input-span input:focus {
+            border-color: #4F46E5; 
+            box-shadow: 0 0 5px rgba(79, 70, 229, 0.5); 
+        }
+
+        
+        .submit {
+            display: block;
+            padding: 0.75rem 1.25rem;
+            background-color: #4F46E5;
+            color: #ffffff;
+            font-size: 0.875rem;
+            line-height: 1.25rem;
+            font-weight: 500;
+            width: 100%;
+            border-radius: 0.5rem;
+            text-transform: uppercase;
+            border: none; 
+            cursor: pointer; 
+            transition: background-color 0.3s; 
+        }
+
+       
+        .submit:hover {
+            background-color: #4338ca; 
+        }
+
+       
+        .toggle {
+            text-align: center; 
+            color: #6B7280;
+            font-size: 0.875rem;
+            line-height: 1.25rem;
+        }
+        
+        .toggle a {
+            text-decoration: underline;
+            color: #4F46E5; 
+        }
+    </style>
+</head>
+<body>
+    <form class="form" action="/action_page.php" method="POST">
+        <h1 class="form-title">Login</h1>
+        <div class="input-span">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="input-span">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <input type="submit" value="Login" class="submit">
+        <div class="toggle">
+            <p>
+                Belum punya akun?
+                <a href="RegisterFadlan.html">Register</a>
+            </p>
+        </div>
+    </form>
+</body>
+</html>
